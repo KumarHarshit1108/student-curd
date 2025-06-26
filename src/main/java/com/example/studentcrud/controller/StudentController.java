@@ -22,7 +22,7 @@ public class StudentController {
 
     @PostMapping
     public ResponseEntity<StudentResponseDTO> createStudent(@Valid @RequestBody StudentRequestDTO dto) {
-        return ResponseEntity.ok(service.create(dto));
+        return ResponseEntity.ok(service.create(dto));  
     }
 
     @GetMapping("/{id}")
