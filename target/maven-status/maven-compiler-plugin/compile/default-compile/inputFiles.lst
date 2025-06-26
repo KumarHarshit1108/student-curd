@@ -1,0 +1,14 @@
+C:\Projects\student-crud-complete-fixed\src\main\java\com\example\studentcrud\validation\Adult.java
+C:\Projects\student-crud-complete-fixed\src\main\java\com\example\studentcrud\exception\ErrorResponse.java
+C:\Projects\student-crud-complete-fixed\src\main\java\com\example\studentcrud\StudentCrudApplication.java
+C:\Projects\student-crud-complete-fixed\src\main\java\com\example\studentcrud\validation\CustomEmail.java
+C:\Projects\student-crud-complete-fixed\src\main\java\com\example\studentcrud\exception\StudentNotFoundException.java
+C:\Projects\student-crud-complete-fixed\src\main\java\com\example\studentcrud\validation\AdultValidator.java
+C:\Projects\student-crud-complete-fixed\src\main\java\com\example\studentcrud\controller\StudentController.java
+C:\Projects\student-crud-complete-fixed\src\main\java\com\example\studentcrud\validation\CustomEmailValidator.java
+C:\Projects\student-crud-complete-fixed\src\main\java\com\example\studentcrud\repository\StudentRepository.java
+C:\Projects\student-crud-complete-fixed\src\main\java\com\example\studentcrud\dto\StudentResponseDTO.java
+C:\Projects\student-crud-complete-fixed\src\main\java\com\example\studentcrud\dto\StudentRequestDTO.java
+C:\Projects\student-crud-complete-fixed\src\main\java\com\example\studentcrud\exception\GlobalExceptionHandler.java
+C:\Projects\student-crud-complete-fixed\src\main\java\com\example\studentcrud\entity\Student.java
+C:\Projects\student-crud-complete-fixed\src\main\java\com\example\studentcrud\service\StudentService.java

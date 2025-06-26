@@ -1,0 +1,15 @@
+com\example\studentcrud\exception\ErrorResponse.class
+com\example\studentcrud\controller\StudentController.class
+com\example\studentcrud\exception\GlobalExceptionHandler.class
+com\example\studentcrud\StudentCrudApplication.class
+com\example\studentcrud\validation\Adult.class
+com\example\studentcrud\validation\AdultValidator.class
+com\example\studentcrud\repository\StudentRepository.class
+com\example\studentcrud\entity\Student.class
+com\example\studentcrud\exception\StudentNotFoundException.class
+com\example\studentcrud\validation\CustomEmail.class
+com\example\studentcrud\validation\CustomEmailValidator.class
+com\example\studentcrud\entity\Student$StudentBuilder.class
+com\example\studentcrud\dto\StudentResponseDTO.class
+com\example\studentcrud\dto\StudentRequestDTO.class
+com\example\studentcrud\service\StudentService.class
