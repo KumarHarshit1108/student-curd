@@ -50,4 +50,9 @@ public class StudentController {
         service.delete(id);
         return ResponseEntity.ok("Student deleted successfully");
     }
+    @GetMapping("/male") 
+    public ResponseEntity<List<StudentResponseDTO>> getMaleStudents() {
+    	return ResponseEntity.ok(service.getMaleStudents());
+    }
+    
 }

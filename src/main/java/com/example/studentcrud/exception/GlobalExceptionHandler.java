@@ -30,6 +30,17 @@ public class GlobalExceptionHandler {
                 errors.put(error.getField(), error.getDefaultMessage()));
         return new ResponseEntity<>(errors, HttpStatus.BAD_REQUEST);
     }
+    @ExceptionHandler(StudentExistsException.class)
+   public ResponseEntity<ErrorResponse> handleStudentAlreadyExists(StudentExistsException ex, HttpServletRequest request) {
+	   ErrorResponse response = new ErrorResponse
+			   (LocalDateTime.now(), 
+				HttpStatus.CONFLICT.value(), 
+				HttpStatus.CONFLICT.getReasonPhrase(), 
+				ex.getMessage(), 
+				request.getRequestURI()
+				);
+	   return new ResponseEntity<>(response, HttpStatus.CONFLICT);
+   }
 
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ErrorResponse> handleGeneric(Exception ex, HttpServletRequest request) {
