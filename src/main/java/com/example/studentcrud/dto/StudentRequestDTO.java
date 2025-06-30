@@ -3,6 +3,7 @@ package com.example.studentcrud.dto;
 
 import com.example.studentcrud.validation.Adult;
 import com.example.studentcrud.validation.CustomEmail;
+import com.example.studentcrud.validation.Gender;
 
 import jakarta.validation.constraints.*;
 import lombok.*;
@@ -23,4 +24,6 @@ public class StudentRequestDTO {
 
     @Adult(18)
     private int age;
+    @Gender(genderList = {"male", "female"})
+    private String gender;
 }
