@@ -16,6 +16,9 @@ public interface StudentRepository extends JpaRepository<Student, Long> {
 
 	Optional<Student> findByEmail(String email);
 	
-	@Query(value = "SELECT * FROM student WHERE gender = 'Male' or gender = 'male'", nativeQuery = true)
-	List<Student> findByGender();
+	@Query(value = "SELECT * FROM student WHERE LOWER(gender) = 'male'", nativeQuery = true)
+	List<Student> findByGenderMale();
+	
+	@Query(value = "SELECT * FROM student WHERE LOWER(gender) = 'female'", nativeQuery = true)
+	List<Student> findByGenderFemale();
 }
