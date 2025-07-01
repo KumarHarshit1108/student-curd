@@ -54,5 +54,14 @@ public class StudentController {
     public ResponseEntity<List<StudentResponseDTO>> getMaleStudents() {
     	return ResponseEntity.ok(service.getMaleStudents());
     }
+    @GetMapping("/female") 
+    public ResponseEntity<List<StudentResponseDTO>> getFemaleStudents() {
+    	return ResponseEntity.ok(service.getFemaleStudents());
+    }
     
+    @GetMapping("/ext/cats") 
+    public ResponseEntity<String> getCatsFact() {
+    	String fact = service.getCatFacts();
+    	return ResponseEntity.ok(fact);    
+    }
 }
